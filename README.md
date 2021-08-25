@@ -1,2 +1,2 @@
-# treehouse-project-1
+# Techdegree Project 1
  A Random Quote Generator
