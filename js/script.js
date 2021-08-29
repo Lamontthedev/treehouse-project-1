@@ -22,6 +22,7 @@ const quotes = [
   {
     quote: 'It always seems impossible until it is done.',
     source: 'Nelson Mandela',
+    citation: 'Speech delivered by Nelson Mandela.',
     year: 2001
   },
   {
@@ -31,7 +32,8 @@ const quotes = [
   },
   {
     quote: 'Education is our passport to the future, for tomorrow belongs to the people who prepare for it today.',
-    source: 'Malcom X',
+    source: 'El Hajj Malik El-Shabazz, (Malcom X)',
+    citation: 'Speech delivered at the founding rally of the Organization of Afro-American Unity (OAAU).',
     year: 1962
   },
   {
@@ -55,6 +57,7 @@ function getRandomQuote (array) {
 /***
  * `printQuote` function
 ***/
+
 
 
 /***
