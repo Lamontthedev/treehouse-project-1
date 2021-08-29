@@ -14,21 +14,25 @@ project 1 - A Random Quote Generator
 const quotes = [
   
   {
-    quote: 'Intelligence plus character, that is the goal of true education.',
+    quote: 'The function of education is to teach one to think intensively and to think critically. Intelligence plus character – that is the goal of true education.',
     source: 'Martin Luther King Jr.',
+    citation: 'During a speech at Morehouse College.',
+    year: 1948
   },
   {
     quote: 'It always seems impossible until it is done.',
     source: 'Nelson Mandela',
+    year: 2001
   },
   {
-    quote: 'When you learn, teach. When you get, give',
+    quote: 'When you learn, teach. When you get, give.',
     source: 'Maya Angelou', 
     citation: '@InspiringThinkn. Motivational-Inspirational-World.Blogspot.com'
   },
   {
     quote: 'Education is our passport to the future, for tomorrow belongs to the people who prepare for it today.',
     source: 'Malcom X',
+    year: 1962
   },
   {
     quote: 'If there is no struggle, there is no progress.',
@@ -37,17 +41,20 @@ const quotes = [
   }
 
 ];
-
+// console.log(quotes);
 /***
  * `getRandomQuote` function
 ***/
-
-
+function getRandomQuote (array) {
+  const randomNum = Math.floor(Math.random() * array.length);
+  // console.log( randomNum, array[randomNum]  );
+  return array[randomNum];
+}
+ getRandomQuote(quotes);
 
 /***
  * `printQuote` function
 ***/
-
 
 
 /***
