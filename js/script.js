@@ -57,22 +57,26 @@ function getRandomQuote (array) {
 /***
  * `printQuote` function
 ***/
+
 function printQuote () {
   const randomQuo = getRandomQuote(quotes);
-  let html = `
+   let html = `
     <p class="quote">${randomQuo.quote}</p>
     <p class="source">${randomQuo.source}
   `;
-  // console.log(html);           
+  // console.log(randomQuo);           
   if ( randomQuo.citation ) {
     html += '<span ' + 'class="citation">' + `${randomQuo.citation}` + '</span>';
     if ( randomQuo.year ) {
       html += '<span ' + 'class="year">' + `${randomQuo.year}` + '</span>';
     }
   }
-    html += '</p>';
+  // console.log(randomQuo.citation, randomQuo.year);
   // console.log(html);
-}
+  html += '</p>';
+
+  document.getElementById('quote-box').innerHTML = html;
+};
 
 
 /***
